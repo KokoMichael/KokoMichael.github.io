@@ -69,6 +69,7 @@ nav{
     position: absolute;
     top: 10px;
     right: 50px;
+    cursor: pointer;
     display: none;
 }
 .hamburger .bi-list{
@@ -188,7 +189,9 @@ nav{
 /* EDUCATION */
 
 #education{
-    background-color: var(--bleu);
+    background-image: url(../imgs/pexels-pixabay-159751.jpg);
+    background-position: center;
+    background-size: cover;
     padding-bottom: 80px;
 }
 .education-content{
@@ -208,6 +211,11 @@ nav{
     height: 250px;
     border: 1px solid #d2d2d2;
     background-color: #fff;
+    cursor: pointer;
+}
+.box:hover{
+    transform: translateY(-10px);
+    transition: all 300ms;
 }
 .date{
     display: flex;
@@ -241,10 +249,10 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     .box{
-        width:80%
+        width:80%;
     }
 }
 
@@ -296,6 +304,11 @@ nav{
 .langue-list li{
     list-style-type: square;
 }
+.langue-list li::marker{
+    content: "✔  ";
+    font-size: 25px;
+    color:#0f0;
+}
 .langue-list h1{
     text-transform: uppercase;
 }
@@ -319,11 +332,17 @@ nav{
 .qualite-list li{
     list-style-type: square;
 }
+.qualite-list li::marker{
+    content: "👉    ";
+    font-size: 25px;
+}
 
 /* CENTRE D'INTERET */
 
 #interet{
-    background-color:var(--bleu);
+    background-image: url(../imgs/pexels-caio-56759.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .interet-content .divider{
     padding-top: 40px;
@@ -336,11 +355,15 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: red;
 }
 .interet-list li{
     list-style-type: square;
 }
-
+.interet-list li::marker{
+    content: "🎈  ";
+    font-size: 25px;
+}
 /* FOOTER */
 
 footer{
