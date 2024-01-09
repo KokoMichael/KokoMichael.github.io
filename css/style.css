@@ -39,6 +39,7 @@ nav{
     top: 0;
     right:0;
     left:0;
+    z-index: 100;
 }
 .nav-link{
     display: flex;
@@ -108,11 +109,31 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 50px;
 }
 .about-content{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.btn-cv{
+    background-color: var(--bleu);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+}
+.btn-cv a{
+    text-decoration: none;
+    color:#fff !important;
+}
+.btn-cv:hover{
+    background-color: #fff;
+    color:var(--bleu) !important;
+    cursor:pointer;
+}
+.btn-cv:hover a{
+    color:var(--bleu) !important;
 }
 .about-item{
     display: flex;
@@ -205,6 +226,7 @@ nav{
     gap: 20px;
     justify-content: center;
     margin-top: 50px;
+    z-index: -10;
 }
 .box{
     width: 300px;
@@ -256,6 +278,13 @@ nav{
     }
 }
 
+
+/* EXPERIENCE */
+
+#experience{
+    background-color: var(--bleu);
+    padding-top:50px;
+}
 /* CONTACT */
 
 #contact{
@@ -268,17 +297,17 @@ nav{
     padding-top: 40px;
 }
 .contact-list{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
     gap: 10px;
     align-items: center;
 }
 
 .contact-list li{
-    list-style-type: none;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
 }
 .contact-list li .bi{
     color: var(--bleu);
@@ -343,6 +372,10 @@ nav{
     background-image: url(../imgs/pexels-caio-56759.jpg);
     background-position: center;
     background-size: cover;
+}
+.interet-content{
+    background-color: black;
+    opacity: 0.8;
 }
 .interet-content .divider{
     padding-top: 40px;
